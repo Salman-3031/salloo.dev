@@ -5,7 +5,10 @@
 html{
     scrollbar-width: none;
 }
-
+/* bg-[url('./src/assets/images/Myimages/salloo4.jpg')]  */
+#heroSection{
+    background-image: url('./src/assets/images/MyImages/salloo4.jpg');
+}
 .stepText {
     position: relative;
 }
