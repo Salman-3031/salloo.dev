@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="./src/assets/css/all.min.css" />
+  <!-- <link rel="stylesheet" href="cssIcons/css/fontawesome.min.css" /> -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="bg-black" id="main">
+    <!------------------------------ hero-section start here  --------------------------->
+    <!-- bg-center md:bg-[100px_-100px] lg:bg-[100px_-200px] -->
+    <section id="heroSection"
+      class="flex items-center  bg-[url('./src/assets/images/Myimages/salloo4.jpg')] bg-no-repeat md:bg-repeat bg-cover bg-center md:bg-[100px_0px] lg:bg-[200px_0px] h-[70vh] lg:min-h-screen sm:h-[50vh]">
+      <!--************ Header start here *********-->
+      <header
+        class="w-full px-4 md:px-16 flex text-white py-5 justify-between items-center bg-[rgba(0,0,0,.5)]  fixed top-0 left-0 z-50">
+        <a href="#heroSection"
+          class="text-2xl font-bold tracking-wider transition duration-500 hover:text-green-400 hover:-translate-y-px hover:translate-x-px hover:text-shadow-[0px_0px_2px] shadow-green-400">
+          <h1>Portfolio</h1>
+        </a>
+
+        <!-- Desktop Navigation start here (hidden on mobile) -->
+        <nav class="hidden md:flex gap-5">
+          <a class="relative py-1 after:left-0 after:transition-all after:duration-500 after:content-[''] after:absolute after:bottom-0 after:w-0 after:h-[2px] hover:after:w-full after:bg-green-400 text-green-400"
+            href="#heroSection">Home</a>
+          <a class="relative py-1 after:left-0 after:transition-all after:duration-500 after:content-[''] after:absolute after:bottom-0 after:w-0 after:h-[2px] hover:after:w-full after:bg-green-400"
+            href="#aboutSection">About</a>
+          <a class="relative py-1 after:left-0 after:transition-all after:duration-500 after:content-[''] after:absolute after:bottom-0 after:w-0 after:h-[2px] hover:after:w-full after:bg-green-400"
+            href="#projectSection">Projects</a>
+          <a class="relative py-1 after:left-0 after:transition-all after:duration-500 after:content-[''] after:absolute after:bottom-0 after:w-0 after:h-[2px] hover:after:w-full after:bg-green-400"
+            href="#servicesSection">Services</a>
+          <a class="relative py-1 after:left-0 after:transition-all after:duration-500 after:content-[''] after:absolute after:bottom-0 after:w-0 after:h-[2px] hover:after:w-full after:bg-green-400"
+            href="#contactSection">Contact</a>
+            <!-- Will be added in Future -->
+          <!-- <button onclick="switchColors()">SwitchColors</button> -->
+            
+        </nav>
+        <!-- Desktop Navigation end here (hidden on mobile) -->
+
+        <!-- Mobile Menu Button start here-->
+        <button class="md:hidden text-white focus:outline-none" id="menuToggle">
+          <i class="fa fa-bars text-2xl"></i>
+        </button>
+        <!-- Mobile Menu Button end here-->
+      </header>
+      <!--************ Header end here *********-->
+
+      <!-- Mobile Menu start here-->
+      <nav id="mobileMenu"
+        class="md:hidden transition-all duration-500 fixed top-[-500px] left-0 w-full bg-[rgba(0,0,0,.5)] z-40 py-4 px-4 flex flex-col gap-3">
+        <a class="mobile-links py-2 text-white hover:text-green-400 border-b border-gray-400 text-xl"
+          href="#heroSection">Home</a>
+        <a class="mobile-links py-2 text-white hover:text-green-400 border-b border-gray-400 text-xl"
+          href="#aboutSection">About</a>
+        <a class="mobile-links py-2 text-white hover:text-green-400 border-b border-gray-400 text-xl"
+          href="#projectSection">Projects</a>
+        <a class="mobile-links py-2 text-white hover:text-green-400 border-b border-gray-400 text-xl"
+          href="#servicesSection">Services</a>
+        <a class="mobile-links py-2 text-white hover:text-green-400 text-xl" href="#contactSection">Contact</a>
+     
+      </nav>
+      <!-- Mobile Menu end here-->
+
+      <!-- Hero Content start here-->
+      <div class="px-4 md:px-16 text-white max-w-3xl mt-10 sm:mt-0">
+        <h1 class="text-2xl sm:text-4xl md:text-6xl font-semibold mb-0 md:mb-1 ">Salman Khan</h1>
+        <h3 class="md:text-2xl text-gray-300 font-semibold text-base stepText">
+          I am&nbsp;<span class=" text-green-400"> Web Developer</span>
+        </h3>
+
+        <!-- hero icons start here-->
+        <div class="flex items-center gap-2 md:gap-5 mt-2 md:mt-5 ">
+          <a href="https://www.facebook.com/share/19Sgb8z9Lo/" target="facebook"
+            class="flex items-center justify-center w-8 h-8 md:w-12 md:h-12 p-2 transition duration-500 bg-gray-400 rounded-full hover:-translate-y-2 hover:bg-green-400 hover:shadow-[0px_0px_10px] shadow-green-400 text-xs sm:text-base">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="https://instagram/salloo_salman_" target="instagram"
+            class="flex items-center justify-center w-8 h-8 md:w-12 md:h-12 p-2 transition duration-500 bg-gray-400 rounded-full hover:-translate-y-2 hover:bg-green-400 hover:shadow-[0px_0px_10px] shadow-green-400 text-xs sm:text-base">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href=""
+            class="flex items-center justify-center w-8 h-8 md:w-12 md:h-12 p-2 transition duration-500 bg-gray-400 rounded-full hover:-translate-y-2 hover:bg-green-400 hover:shadow-[0px_0px_10px] shadow-green-400 text-xs sm:text-base">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+          <a href=""
+            class="flex items-center justify-center w-8 h-8 md:w-12 md:h-12 p-2 transition duration-500 bg-gray-400 rounded-full hover:-translate-y-2 hover:bg-green-400 hover:shadow-[0px_0px_10px] shadow-green-400 text-xs sm:text-base">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+        </div>
+        <!-- hero icons start here-->
+      </div>
+      <!-- Hero Content end here-->
+    </section>
+    <!-------------------------------------- hero-section end here  ------------------------------------>
+
+    <!------------------------- about-section start here  ---------------------------------------------->
+    <section id="aboutSection" class= " dark:bg-white text-white px-4 md:px-16">
+      <!--******* about-hero start here  ********-->
+      <div class="about-hero text-center md:py-5 py-1 ">
+        <h2 class="text-2xl md:text-3xl tracking-wider font-semibold">
+          About
+        </h2>
+        <p class="md:px-[10%] px-0 md:mt-1 text-gray-300">
+          I'm Salman Khan, a frontend developer who builds fast, modern
+          websites using HTML, CSS, JavaScript, React, and Tailwind CSS. I
+          focus on clean code, responsive design, and great user experiences.
+          Let’s build something awesome
+        </p>
+      </div>
+      <!--******* about-hero end here  ********-->
+
+      <!--********* abouut container start here **********-->
+      <div class="about-container grid grid-cols-1 lg:grid-cols-12 lg:gap-8 gap-y-4 py-2">
+        <!-- Image Column -->
+        <div
+          class="lg:col-span-4 flex justify-center rounded-2xl transition duration-500 hover:-translate-y-1   hover:shadow-[0px_0px_5px] hover:shadow-green-400">
+          <img class="w-full h-[300px] bg-top rounded-2xl object-cover sm:object-[0px_-250px] lg:object-center"
+            src="./src/assets/images/MyImages/salloo1.jpg" alt="Salman Khan - Frontend Developer" />
+        </div>
+
+        <!-- Info Column start here -->
+        <div
+          class="lg:col-span-8 p-5 md:p-8 rounded-2xl transition duration-500 hover:-translate-y-1 hover:shadow-[0px_0px_5px] hover:shadow-green-400">
+          <h2 class="text-xl md:text-2xl font-semibold mb-6 text-green-400">
+            Web Developer
+          </h2>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-y-2 md:gap-x-1 items-center">
+            <!-- Left Info Column start here -->
+            <ul class="space-y-3 list-inside">
+              <li class="marker:content-['📃']">
+                <span class="font-semibold min-w-24 inline-block">Experience:</span>
+                <span class="text-gray-300">5+ years</span>
+              </li>
+              <li class="marker:content-['📃']">
+                <span class="font-semibold min-w-24 inline-block">Education:</span>
+                <span class="text-gray-300">BS-IT</span>
+              </li>
+              <li class="marker:content-['📃']">
+                <span class="font-semibold inline-block min-w-24">City:</span>
+                <span class="text-gray-300">Mingora</span>
+              </li>
+              <li class="marker:content-['📃']">
+                <span class="font-semibold min-w-24 inline-block">Expertise:</span>
+                <span class="text-gray-300">HTML, CSS, JS, React, Tailwind</span>
+              </li>
+            </ul>
+            <!-- Left Info Column start here -->
+
+            <!-- Right Info Column start here -->
+            <ul class="space-y-3 list-inside">
+              <li class="marker:content-['📃']">
+                <span class="font-semibold min-w-24 inline-block">Website:</span>
+                <a href="https://www.example.com" class="hover:underline text-gray-300 break-all">example.com</a>
+              </li>
+              <li class="marker:content-['📃']">
+                <span class="font-semibold min-w-24 inline-block">Email:</span>
+                <a href="mailto:salman5223031@gmail.com"
+                  class="break-all hover:underline text-gray-300">salman5223031@gmail.com</a>
+              </li>
+              <li class="marker:content-['📃']">
+                <span class="font-semibold min-w-24 inline-block">Phone:</span>
+                <span class="text-gray-300">0348 *******</span>
+              </li>
+              <li class="marker:content-['📃']">
+                <span class="font-semibold min-w-24 inline-block">Freelance:</span>
+                <span class="text-gray-300">Available</span>
+              </li>
+            </ul>
+            <!-- Right Info Column end here -->
+          </div>
+        </div>
+        <!-- Info Column end here -->
+      </div>
+      <!--********* abouut-container end here **********-->
+
+      <!--********** about-card-container start here ***********-->
+      <div
+        class="about-card-container gap-x-5 gap-y-8 flex justify-between text-center py-5 mt-2 md:py-10 flex-wrap sm:flex-nowrap">
+        <div
+          class="about-card bg-[#151515] relative px-1 sm:pb-8 pb-4 sm:pt-10 pt-8 rounded-md grow sm:grow-0 basis-1/2 md:basis-1/4 transition duration-500 hover:-translate-y-1 hover:shadow-[0px_0px_5px] hover:shadow-green-400">
+          <div
+            class="icon-con flex justify-center items-center absolute p-3 text-2xl bg-[#151515] h-14 aspect-square rounded-full text-green-400 -top-7 border-black border-2 left-1/2 translate-x-[-50%]">
+            <i class="fa-solid fa-face-smile"></i>
+          </div>
+
+          <h1 class="text-xl sm:text-2xl md:text-4xl font-bold mb-1">120</h1>
+          <h4 class="text-gray-300">Happy Clients</h4>
+        </div>
+              <div
+          class="about-card bg-[#151515] relative px-1 sm:pb-8 pb-4 sm:pt-10 pt-8 rounded-md grow sm:grow-0 basis-1/2 md:basis-1/4 transition duration-500 hover:-translate-y-1 hover:shadow-[0px_0px_5px] hover:shadow-green-400">
+          <div
+            class="icon-con flex justify-center items-center absolute p-3 text-2xl bg-[#151515] h-14 aspect-square rounded-full text-green-400 -top-7 border-black border-2 left-1/2 translate-x-[-50%]">
+            <i class="fa-solid fa-hand-holding-hand"></i>
+          </div>
+
+          <h1 class="text-xl sm:text-2xl md:text-4xl font-bold mb-1">24</h1>
+          <h4 class="text-gray-300">Projects</h4>
+        </div>
+             <div
+          class="about-card bg-[#151515] relative px-1 sm:pb-8 pb-4 sm:pt-10 pt-8 rounded-md grow sm:grow-0 basis-1/2 md:basis-1/4 transition duration-500 hover:-translate-y-1 hover:shadow-[0px_0px_5px] hover:shadow-green-400">
+          <div
+            class="icon-con flex justify-center items-center absolute p-3 text-2xl bg-[#151515] h-14 aspect-square rounded-full text-green-400 -top-7 border-black border-2 left-1/2 translate-x-[-50%]">
+            <i class="fa-solid fa-headset"></i>
+          </div>
+
+          <h1 class="text-xl sm:text-2xl md:text-4xl font-bold mb-1">24/7</h1>
+          <h4 class="text-gray-300">Hours of support</h4>
+        </div>
+              <div
+          class="about-card bg-[#151515] relative px-1 sm:pb-8 pb-4 sm:pt-10 pt-8 rounded-md grow sm:grow-0 basis-1/2 md:basis-1/4 transition duration-500 hover:-translate-y-1 hover:shadow-[0px_0px_5px] hover:shadow-green-400">
+          <div
+            class="icon-con flex justify-center items-center absolute p-3 text-2xl bg-[#151515] h-14 aspect-square rounded-full text-green-400 -top-7 border-black border-2 left-1/2 translate-x-[-50%]">
+            <i class="fa-solid fa-users"></i>
+          </div>
+
+          <h1 class="text-xl sm:text-2xl md:text-4xl font-bold mb-1">97%</h1>
+          <h4 class="text-gray-300">Positive Review</h4>
+        </div>
+      </div>
+      <!--********** about card container end here ***********-->
+
+      <!--******** about Myskills container start here  ********-->
+      <div class="myskils-container ">
+        <h5 class="inline-block tracking-wider align-middle">SKILLS</h5>
+        <div class="w-20 inline-block align-middle ml-1 h-px bg-green-400"></div>
+        <h2 class="text-2xl md:text-3xl font-semibold">My Skills</h2>
+
+        <!--**** skill track container start here  ****-->
+        <div class="skill-track-con py-2 md:py-5 grid grid-cols-1 md:grid-cols-2 gap-5">
+          <!-- item1  -->
+          <div>
+            <div class="skil-content flex justify-between">
+              <h6 class="text-xs font-bold" title="HyperText Markup Language">
+                HTML
+              </h6>
+              <h6 class="text-xs font-bold">99%</h6>
+            </div>
+            <div
+              class="wrapper w-full h-4 mt-1 bg-gray-300 relative after:absolute after:content-[''] after:w-[99%] after:h-full after:bg-green-400">
+            </div>
+          </div>
+          <!-- item2  -->
+          <div>
+            <div class="skil-content flex justify-between">
+              <h6 class="text-xs font-bold" title="HyperText Markup Language">
+                React
+              </h6>
+              <h6 class="text-xs font-bold">77%</h6>
+            </div>
+            <div
+              class="wrapper w-full h-4 mt-1 bg-gray-300 relative after:absolute after:content-[''] after:w-[77%] after:h-full after:bg-green-400">
+            </div>
+          </div>
+          <!-- item3  -->
+          <div>
+            <div class="skil-content flex justify-between">
+              <h6 class="text-xs font-bold" title="HyperText Markup Language">
+                CSS
+              </h6>
+              <h6 class="text-xs font-bold">95%</h6>
+            </div>
+            <div
+              class="wrapper w-full h-4 mt-1 bg-gray-300 relative after:absolute after:content-[''] after:w-[95%] after:h-full after:bg-green-400">
+            </div>
+          </div>
+          <!-- item4  -->
+          <div>
+            <div class="skil-content flex justify-between">
+              <h6 class="text-xs font-bold" title="HyperText Markup Language">
+                Backend
+              </h6>
+              <h6 class="text-xs font-bold">55%</h6>
+            </div>
+            <div
+              class="wrapper w-full h-4 mt-1 bg-gray-300 relative after:absolute after:content-[''] after:w-[55%] after:h-full after:bg-green-400">
+            </div>
+          </div>
+          <!-- item5  -->
+          <div>
+            <div class="skil-content flex justify-between">
+              <h6 class="text-xs font-bold" title="HyperText Markup Language">
+                JavaScript
+              </h6>
+              <h6 class="text-xs font-bold">87%</h6>
+            </div>
+            <div
+              class="wrapper w-full h-4 mt-1 bg-gray-300 relative after:absolute after:content-[''] after:w-[87%] after:h-full after:bg-green-400">
+            </div>
+          </div>
+          <!-- item6  -->
+          <div>
+            <div class="skil-content flex justify-between">
+              <h6 class="text-xs font-bold" title="HyperText Markup Language">
+                Database
+              </h6>
+              <h6 class="text-xs font-bold">90%</h6>
+            </div>
+            <div
+              class="wrapper w-full h-4 mt-1 bg-gray-300 relative after:absolute after:content-[''] after:w-[90%] after:h-full after:bg-green-400">
+            </div>
+          </div>
+        </div>
+        <!-- skill track container end here  -->
+      </div>
+      <!--******** about Myskills container end here  ********-->
+
+      <!--*********** hobbies/features section start here  ***********-->
+      <div class="hobbies-container mt-5 md:mt-10">
+        <h5 class="inline-block tracking-wider align-middle uppercase">
+          features
+        </h5>
+        <div class="w-20 inline-block align-middle ml-1 h-px bg-green-400"></div>
+        <h2 class="text-2xl md:text-3xl font-semibold uppercase">
+          I'm Interested In
+        </h2>
+
+        <!--**** feature track container start here  ****-->
+        <div class="hobbies-items-con py-2 md:py-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5">
+          <!-- item1  -->
+          <div
+            class="group flex gap-4 items-center p-5 bg-[#151515] transition-all duration-300 border border-transparent hover:border hover:border-green-400">
+            <i class="fa-solid fa-image text-yellow-500 text-xl md:text-2xl"></i>
+            <h3 class="font-semibold group-hover:text-green-400 transition duration-300 md:text-xl">
+              Photo Editing
+            </h3>
+          </div>
+          <!-- item2  -->
+          <div
+            class="group flex gap-4 items-center p-5 bg-[#151515] transition-all duration-300 border border-transparent hover:border hover:border-green-400">
+            <i class="fa-solid fa-headset text-red-500 text-xl md:text-2xl"></i>
+            <h3 class="font-semibold group-hover:text-green-400 transition duration-300 md:text-xl">
+              Deep listening
+            </h3>
+          </div>
+          <!-- item3  -->
+          <div
+            class="group flex gap-4 items-center p-5 bg-[#151515] transition-all duration-300 border border-transparent hover:border hover:border-green-400">
+            <i class="fa-brands fa-sketch text-purple-500 text-xl md:text-2xl"></i>
+            <h3 class="font-semibold group-hover:text-green-400 transition duration-300 md:text-xl">
+              Pencil portraits
+            </h3>
+          </div>
+          <!-- item4  -->
+          <div
+            class="group flex gap-4 items-center p-5 bg-[#151515] transition-all duration-300 border border-transparent hover:border hover:border-green-400">
+            <i class="fa-solid fa-moon text-cyan-500 text-xl md:text-2xl"></i>
+            <h3 class="font-semibold group-hover:text-green-400 transition duration-300 md:text-xl">
+              Night coding
+            </h3>
+          </div>
+        </div>
+        <!-- skill track container end here  -->
+      </div>
+
+      <!--*********** hobbies section end here  ***********-->
+    </section>
+    <!------------------------- about-section end here  ---------------------------------------------->
+
+
+
+
+    <!---------------------------- Project section start here  -------------------------------->
+
+    <section id="projectSection" class="text-white px-4 md:px-16">
+      <div class="project-hero text-center md:py-5 py-0 ">
+        <h2 class="text-2xl md:text-3xl tracking-wider font-semibold">
+          Projects
+        </h2>
+        <p class="md:px-[10%] px-0 md:mt-1 text-gray-300">
+          Every project tells a story, here’s how I tackled challenges, iterated on ideas, and shipped solutions that
+          make a difference
+        </p>
+      </div>
+
+      <div class="project-buttons py-2  flex justify-center gap-2 md:gap-5 flex-wrap">
+        <button
+          class="px-3 py-2 text-xs md:text-base border-0 rounded-sm capitalize font-semibold bg-green-400 transition duration-300 hover:text-white text-shadow-2xs ">
+          All
+        </button>
+        <button
+          class="px-3 py-2 text-xs md:text-base border-0 bg-white text-black rounded-sm capitalize font-semibold  hover:bg-green-400 transition duration-300 hover:text-white text-shadow-2xs">
+          UI/UX
+        </button>
+        <button
+          class="px-3 py-2 text-xs md:text-base border-0 bg-white text-black rounded-sm capitalize  font-semibold  hover:bg-green-400 transition duration-300 hover:text-white text-shadow-2xs">
+          Portfolio
+        </button>
+        <button
+          class="px-3 py-2 text-xs md:text-base border-0 bg-white text-black rounded-sm capitalize font-semibold hover:bg-green-400 transition duration-300 hover:text-white text-shadow-2xs">
+          Branding
+        </button>
+      </div>
+
+      <!--******* project-container start here *****-->
+      <div style="scrollbar-width: none;"
+        class="project-container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 py-5 max-h-[90vh] md:max-h-[53vh] overflow-y-auto overscroll-y-auto">
+        <!-- item 1  -->
+        <div class="group project-item  w-full aspect-square relative overflow-hidden">
+          <div class="project-item-img w-full h-full">
+            <img class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+              src="./src/assets/images/portfolio/portfolio-1.webp" alt="" />
+          </div>
+          <div
+            class="project-item-content p-5 space-y-3 absolute transition-all duration-500 top-[1000px] group-hover:top-0 left-0 w-full h-full bg-gradient-to-t from-[rgba(0,0,0,1)] to-[rgba(0,0,0,0.5)] flex justify-center flex-col">
+            <h6 class="uppercase text-green-400">UI/UX Design</h6>
+            <h4 class="capitalize font-semibold text-xl">
+              Resturant landing page
+            </h4>
+            <div class="button-box flex gap-2 mt-2">
+              <a href="https://recipe-app-topaz-five.vercel.app" target="_blank"
+                class="px-3 py-2 border-0 bg-white text-black rounded-sm capitalize text-xs font-bold hover:bg-green-400 transition duration-300 hover:text-white text-shadow-2xs">View
+                Code</a>
+              <a href="https://recipe-app-topaz-five.vercel.app" target="_blank"
+                class="px-3 py-2 border-0 bg-white text-black rounded-sm capitalize text-xs font-bold hover:bg-green-400 transition duration-300 hover:text-white text-shadow-2xs">Visit
+                Website</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- item 2 -->
+        <div class="group project-item  w-full aspect-square relative overflow-hidden">
+          <div class="project-item-img w-full h-full">
+            <img class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+              src="./src/assets/images/portfolio/portfolio-10.webp" alt="" />
+          </div>
+          <div
+            class="project-item-content p-5 space-y-3 absolute transition-all duration-500 top-[1000px] group-hover:top-0 left-0 w-full h-full bg-gradient-to-t from-[rgba(0,0,0,1)] to-[rgba(0,0,0,0.5)] flex justify-center flex-col">
+            <h6 class="uppercase text-green-400">UI/UX Design</h6>
+            <h4 class="capitalize font-semibold text-xl">
+              Resturant landing page
+            </h4>
+            <div class="button-box flex gap-2 mt-2">
+              <a href="#" target="_blank"
+                class="px-3 py-2 border-0 bg-white text-black rounded-sm capitalize text-xs font-bold hover:bg-green-400 transition duration-300 hover:text-white text-shadow-2xs">View
+                Code</a>
+              <a href="#" target="_blank"
+                class="px-3 py-2 border-0 bg-white text-black rounded-sm capitalize text-xs font-bold hover:bg-green-400 transition duration-300 hover:text-white text-shadow-2xs">Visit
+                Website</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- item 3 -->
+        <div class="group project-item  w-full aspect-square relative overflow-hidden">
+          <div class="project-item-img w-full h-full">
+            <img class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+              src="./src/assets/images/portfolio/portfolio-11.webp" alt="" />
+          </div>
+          <div
+            class="project-item-content p-5 space-y-3 absolute transition-all duration-500 top-[1000px] group-hover:top-0 left-0 w-full h-full bg-gradient-to-t from-[rgba(0,0,0,1)] to-[rgba(0,0,0,0.5)] flex justify-center flex-col">
+            <h6 class="uppercase text-green-400">UI/UX Design</h6>
+            <h4 class="capitalize font-semibold text-xl">
+              Resturant landing page
+            </h4>
+            <div class="button-box flex gap-2 mt-2">
+              <a href="#" target="_blank"
+                class="px-3 py-2 border-0 bg-white text-black rounded-sm capitalize text-xs font-bold hover:bg-green-400 transition duration-300 hover:text-white text-shadow-2xs">View
+                Code</a>
+              <a href="#" target="_blank"
+                class="px-3 py-2 border-0 bg-white text-black rounded-sm capitalize text-xs font-bold hover:bg-green-400 transition duration-300 hover:text-white text-shadow-2xs">Visit
+                Website</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- item 4 -->
+        <div class="group project-item w-full aspect-square relative overflow-hidden">
+          <div class="project-item-img w-full h-full">
+            <img class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+              src="./src/assets/images/portfolio/portfolio-12.webp" alt="" />
+          </div>
+          <div
+            class="project-item-content p-5 space-y-3 absolute transition-all duration-500 top-[1000px] group-hover:top-0 left-0 w-full h-full bg-gradient-to-t from-[rgba(0,0,0,1)] to-[rgba(0,0,0,0.5)] flex justify-center flex-col">
+            <h6 class="uppercase text-green-400">UI/UX Design</h6>
+            <h4 class="capitalize font-semibold text-xl">
+              Resturant landing page
+            </h4>
+            <div class="button-box flex gap-2 mt-2">
+              <a href="#" target="_blank"
+                class="px-3 py-2 border-0 bg-white text-black rounded-sm capitalize text-xs font-bold hover:bg-green-400 transition duration-300 hover:text-white text-shadow-2xs">View
+                Code</a>
+              <a href="#" target="_blank"
+                class="px-3 py-2 border-0 bg-white text-black rounded-sm capitalize text-xs font-bold hover:bg-green-400 transition duration-300 hover:text-white text-shadow-2xs">Visit
+                Website</a>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <!--******* project-container end here *****-->
+    </section>
+    <!---------------------------- Project section end here  -------------------------------->
+
+    <!-------------------------- Services section start here  ------------------------->
+
+    <section id="servicesSection" class="text-white px-4 md:px-16">
+      <div class="contact-hero text-center md:py-5 py-0 mt-5 md:mt-0">
+        <h2 class="text-2xl md:text-3xl tracking-wider font-semibold">
+          Services
+        </h2>
+        <p class="md:px-[10%] px-0 md:mt-1 text-gray-300">
+          We provide a wide range of services tailored to meet your business
+          or personal needs. From concept to execution, we ensure high-quality
+          results with attention to detail and customer satisfaction.
+        </p>
+      </div>
+
+      <!--********** services-cards-container start here  *********-->
+      <div class="serivces-container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 py-5">
+        <div
+          class="service-card bg-[#151515] text-center transition duration-500 hover:-translate-y-1 overflow-hidden rounded-sm hover:bg-green-400 group">
+          <div class="service-card-img w-full h-56 p-3">
+            <img class="w-full h-full object-cover rounded-sm" src="./src/assets/images/services/services-4.webp"
+              alt="" />
+          </div>
+          <div class="service-card-content py-3 px-1">
+            <h2 class="text-2xl md:text-3xl font-semibold group-hover:text-black">
+              Title
+            </h2>
+            <p class="group-hover:text-black text-gray-300">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut,
+              eius! Ex, voluptatem?
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="service-card bg-[#151515] text-center transition duration-500 hover:-translate-y-1 overflow-hidden rounded-sm hover:bg-green-400 group">
+          <div class="service-card-img w-full h-56 p-3">
+            <img class="w-full h-full object-cover rounded-sm" src="./src/assets/images/portfolio/portfolio-9.webp"
+              alt="" />
+          </div>
+          <div class="service-card-content py-3 px-1">
+            <h2 class="text-2xl md:text-3xl font-semibold group-hover:text-black">
+              Title
+            </h2>
+            <p class="group-hover:text-black text-gray-300">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut,
+              eius! Ex, voluptatem?
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="service-card bg-[#151515] text-center transition duration-500 hover:-translate-y-1 overflow-hidden rounded-sm hover:bg-green-400 group">
+          <div class="service-card-img w-full h-56 p-3">
+            <img class="w-full h-full object-cover rounded-sm" src="./src/assets/images/portfolio/portfolio-8.webp"
+              alt="" />
+          </div>
+          <div class="service-card-content py-3 px-1">
+            <h2 class="text-2xl md:text-3xl font-semibold group-hover:text-black">
+              Title
+            </h2>
+            <p class="group-hover:text-black text-gray-300">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut,
+              eius! Ex, voluptatem?
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="service-card bg-[#151515] text-center transition duration-500 hover:-translate-y-1 overflow-hidden rounded-sm hover:bg-green-400 group">
+          <div class="service-card-img w-full h-56 p-3">
+            <img class="w-full h-full object-cover rounded-sm" src="./src/assets/images/portfolio/portfolio-5.webp"
+              alt="" />
+          </div>
+          <div class="service-card-content py-3 px-1">
+            <h2 class="text-2xl md:text-3xl font-semibold group-hover:text-black">
+              Title
+            </h2>
+            <p class="group-hover:text-black text-gray-300">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut,
+              eius! Ex, voluptatem?
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--********** services-cards-container end here  *********-->
+    </section>
+
+    <!-------------------------- Services section end here  ------------------------->
+
+    <!-- testimonial section start here  -->
+    <section id="testimonialSection" class="text-white px-4 md:px-16">
+      <div class="contact-hero text-center py-0 mt-5 ">
+        <h2 class="text-2xl md:text-3xl tracking-wider font-semibold">
+          Testimonials
+        </h2>
+        <p class="md:px-[10%] px-0 md:my-1 text-gray-300">
+          Success speaks for itself. Here’s what others say.
+        </p>
+      </div>
+
+      <!-- testimonial container start here  -->
+      <div class="testimonial-con py-5   grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+        <!-- card 1  -->
+        <div
+          class="card border border-transparent hover:border hover:border-green-400 transition duration-500 p-5 bg-[#151515] rounded-md">
+          <p class="text-gray-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit laudantium obcaecati
+            impedit, a beatae
+            corrupti!</p>
+          <div class="flex items-center gap-5 mt-5">
+            <img class="w-14 h-14 object-cover rounded-full" src="./src/assets/images/person/person-f-12.webp"
+              alt="user">
+            <div>
+              <h3 class="text-xl font-semibold -mb-1">Holden Caulfield</h3>
+              <h6 class="text-gray-300">Engineer</h6>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 2  -->
+        <div
+          class="card border border-transparent hover:border hover:border-green-400 transition duration-500 p-5 bg-[#151515] rounded-md">
+          <p class="text-gray-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit laudantium obcaecati
+            impedit, a beatae
+            corrupti!</p>
+          <div class="flex items-center gap-5 mt-5">
+            <img class="w-14 h-14 object-cover rounded-full" src="./src/assets/images/person/person-m-12.webp"
+              alt="user">
+            <div>
+              <h3 class="text-xl font-semibold -mb-1">Holden Caulfield</h3>
+              <h6 class="text-gray-300">Engineer</h6>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 3 -->
+        <div
+          class="card border border-transparent hover:border hover:border-green-400 transition duration-500 p-5 bg-[#151515] rounded-md">
+          <p class="text-gray-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit laudantium obcaecati
+            impedit, a beatae
+            corrupti!</p>
+          <div class="flex items-center gap-5 mt-5">
+            <img class="w-14 h-14 object-cover rounded-full" src="./src/assets/images/person/person-m-9.webp"
+              alt="user">
+            <div>
+              <h3 class="text-xl font-semibold -mb-1">Holden Caulfield</h3>
+              <h6 class="text-gray-300">Engineer</h6>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- testimonial container end here  -->
+
+    </section>
+
+    <!-- testimonial section end here  -->
+
+    <!------------------------------ contact section start here  --------------------------------->
+    <section id="contactSection" class="text-white px-4 md:px-16">
+      <!--******* contact-hero start here  ********-->
+      <div class="contact-hero text-center md:py-5 py-2 ">
+        <h2 class="text-2xl md:text-3xl tracking-wider font-semibold">
+          Contact
+        </h2>
+        <p class="md:px-[10%] px-0 md:mt-1 text-gray-300">
+          Have questions or want to work together? Feel free to reach out.
+        </p>
+      </div>
+      <!--******* contact-hero end here  ********-->
+
+      <!--******* contact-card-container start here  ********-->
+      <div class="contact-card-container py-5 md:py-5 flex flex-wrap gap-x-5 gap-y-3">
+        <!-- Card 1 -->
+        <div
+          class="contact-card w-full sm:w-[calc(50%-10px)] flex items-center gap-4 group grow transition-all duration-500 hover:-translate-y-1">
+          <div
+            class="contact-icon bg-green-400 rounded-full w-12 h-12 flex items-center justify-center group-hover:bg-gray-300 transition-all duration-500">
+            <i class="fa-solid fa-location-dot text-2xl text-black"></i>
+          </div>
+          <div class="contact-content">
+            <h2 class="text-base md:text-lg font-semibold -mb-1">Address</h2>
+            <p class="text-gray-300 text-[14px]">Pakistan, KPK Mingora Swat</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div
+          class="contact-card w-full sm:w-[calc(50%-10px)] flex items-center gap-4 group grow transition-all duration-500 hover:-translate-y-1">
+          <div
+            class="contact-icon bg-green-400 rounded-full w-12 h-12 flex items-center justify-center group-hover:bg-gray-300 transition-all duration-500">
+            <i class="fa-solid fa-phone text-2xl text-black"></i>
+          </div>
+          <div class="contact-content">
+            <h2 class="text-base md:text-lg font-semibold -mb-1">Call Me</h2>
+            <a class="hover:underline cursor-pointer text-gray-300 text-[14px]" href="tel:0348*****">02884829478</a>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div
+          class="contact-card w-full sm:w-[calc(50%-10px)] flex items-center gap-4 group grow transition-all duration-500 hover:-translate-y-1">
+          <div
+            class="contact-icon bg-green-400 rounded-full w-12 h-12 flex items-center justify-center group-hover:bg-gray-300 transition-all duration-500">
+            <i class="fa-solid fa-envelope text-2xl text-black"></i>
+          </div>
+          <div class="contact-content">
+            <h2 class="text-base md:text-lg font-semibold -mb-1">Email</h2>
+            <a href="mailto:salman5223031@gmail.com"
+              class="break-all hover:underline cursor-pointer text-gray-300 text-[14px]">salman5223031@gmail.com</a>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div
+          class="contact-card w-full sm:w-[calc(50%-10px)] flex items-center gap-4 group grow transition-all duration-500 hover:-translate-y-1">
+          <div
+            class="contact-icon bg-green-400 rounded-full w-12 h-12 flex items-center justify-center group-hover:bg-gray-300 transition-all duration-500">
+            <i class="fa-solid fa-share-nodes text-2xl text-black"></i>
+          </div>
+          <div class="contact-content">
+            <h2 class="text-base md:text-lg font-semibold -mb-1">
+              Social Profiles
+            </h2>
+            <div class="flex items-center gap-2 mt-1 flex-wrap">
+              <a href="https://www.facebook.com/share/19Sgb8z9Lo/" target="_blank"
+                class="flex items-center justify-center w-5 h-5 p-2 bg-gray-300 text-black rounded-full hover:bg-green-400 hover:shadow-[0px_0px_10px] shadow-green-400 text-xs">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="https://instagram.com/salloo_salman_" target="_blank"
+                class="flex items-center justify-center w-5 h-5 p-2 bg-gray-300 text-black rounded-full hover:bg-green-400 hover:shadow-[0px_0px_10px] shadow-green-400 text-xs">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="#"
+                class="flex items-center justify-center w-5 h-5 p-2 bg-gray-300 text-black rounded-full hover:bg-green-400 hover:shadow-[0px_0px_10px] shadow-green-400 text-xs">
+                <i class="fa-brands fa-x-twitter"></i>
+              </a>
+              <a href="#"
+                class="flex items-center justify-center w-5 h-5 p-2 bg-gray-300 text-black rounded-full hover:bg-green-400 hover:shadow-[0px_0px_10px] shadow-green-400 text-xs">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--******* contact-card-container end here  ********-->
+
+      <!--********** contact form start here *********8-->
+      <form class="py-5">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-5">
+          <input
+            class="px-3 py-2 border-2 border-transparent outline-0 focus:border-green-400 rounded-xs bg-slate-200 placeholder:text-gray-700 text-gray-700"
+            type="text" placeholder="Your Name" />
+          <input
+            class="px-3 py-2 border-2 border-transparent outline-0 focus:border-green-400 rounded-xs bg-slate-200 placeholder:text-gray-700 text-gray-700"
+            type="email" placeholder="Your Email" />
+        </div>
+
+        <input
+          class="px-3 py-2 border-2 border-transparent outline-0 focus:border-green-400 rounded-xs bg-slate-200 placeholder:text-gray-700 text-gray-700 mt-2 md:mt-5 w-full"
+          type="text" placeholder="Subject" />
+
+        <textarea
+          class="px-3 py-2 border-2 border-transparent outline-0 focus:border-green-400 rounded-xs bg-slate-200 placeholder:text-gray-700 text-gray-700 mt-2 md:mt-5 resize-none w-full "
+          rows="5" placeholder="Message"></textarea>
+        <div class="flex justify-center">
+         
+          <button
+            class="px-3 py-2 mt-2 md:mt-5  md:basis-4/12 basis-full rounded-xs text-gray-700 tracking-wide hover:text-white transition-all duration-500 border-2 border-green-400 hover:border-white text-shadow-2xs z-10 font-semibold bg-slate-200 relative overflow-hidden after:content-[''] after:absolute after:w-full after:h-0 after:top-0 after:left-0 after:bg-green-400  after:rounded-[0%_0%_50%_50%] after:-z-10  after:hover:h-[200%] after:transition-all after:duration-700 after:text-white hover:after:text-white">
+            Submit
+          </button>
+        </div>
+      </form>
+
+      <!--********** contact form end here *********8-->
+    </section>
+    <!------------------------------ contact section end here  --------------------------------->
+  </main>
+
+  <!--------------------------------- footer start here  ----------------------------------->
+  <footer class="px-4 md:px-16 py-5 text-center bg-[#151515] text-white">
+    <h2 class="text-2xl md:text-3xl font-semibold">Salman Khan</h2>
+    <p class="md:my-3 my-1 text-gray-300">
+      Where logic meets creativity: Building web magic with React &
+      Tailwindcss.
+    </p>
+    <div class="footer-links flex gap-2 md:gap-5 justify-center mt-2">
+      <a href="https://www.facebook.com/share/19Sgb8z9Lo/" target="facebook"
+        class="flex items-center justify-center w-10 h-10 md:w-12 md:h-12 p-2 transition duration-500 bg-gray-400 rounded-full hover:-translate-y-2 hover:bg-green-400 hover:shadow-[0px_0px_10px] hover:shadow-green-400">
+        <i class="fa-brands fa-facebook-f"></i>
+      </a>
+      <a href="https://instagram/salloo_salman_" target="instagram"
+        class="flex items-center justify-center w-10 h-10 md:w-12 md:h-12 p-2 transition duration-500 bg-gray-400 rounded-full hover:-translate-y-2 hover:bg-green-400 hover:shadow-[0px_0px_10px] hover:shadow-green-400">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href=""
+        class="flex items-center justify-center w-10 h-10 md:w-12 md:h-12 p-2 transition duration-500 bg-gray-400 rounded-full hover:-translate-y-2 hover:bg-green-400 hover:shadow-[0px_0px_10px] hover:shadow-green-400">
+        <i class="fa-brands fa-x-twitter"></i>
+      </a>
+      <a href=""
+        class="flex items-center justify-center w-10 h-10 md:w-12 md:h-12 p-2 transition duration-500 bg-gray-400 rounded-full hover:-translate-y-2 hover:bg-green-400 hover:shadow-[0px_0px_10px] hover:shadow-green-400">
+        <i class="fa-brands fa-linkedin-in"></i>
+      </a>
+    </div>
+    <hr class="text-gray-300 my-5" />
+    <p>&copy; Copyright <strong>Portfolio</strong> All Rights Reserved</p>
+    <small>Coded by <span class="text-green-400">Salman Khan</span></small>
+  </footer>
+  <!--------------------------------- footer end here  ----------------------------------->
+
+  <script src="./src/assets/js/script.js"></script>
+</body>
+
+</html>
