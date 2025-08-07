@@ -41,6 +41,8 @@ mobileLinks.forEach(link => {
 const switchColors = () =>{
   // document.documentElement.classList.toggle('dark');
 };
-
-
+// const emoji = document.getElementById('emoji')
+// document.onmousemove = (e)=>{
+//   emoji.style.transform = `translate(${e.pageX}px, ${e.pageY}px)`;
+// }
 

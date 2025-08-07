@@ -12,6 +12,7 @@
 
 <body>
   <main class="bg-black" id="main">
+   
     <!------------------------------ hero-section start here  --------------------------->
     <!-- bg-center md:bg-[100px_-100px] lg:bg-[100px_-200px] -->
     <section id="heroSection"
@@ -23,6 +24,8 @@
           class="text-2xl font-bold tracking-wider transition duration-500 hover:text-green-400 hover:-translate-y-px hover:translate-x-px hover:text-shadow-[0px_0px_2px] shadow-green-400">
           <h1>Portfolio</h1>
         </a>
+
+       
 
         <!-- Desktop Navigation start here (hidden on mobile) -->
         <nav class="hidden md:flex gap-5">
@@ -587,10 +590,10 @@
 
     <!-------------------------- Services section end here  ------------------------->
 
-    <!-- testimonial section start here  -->
+    <!------------------------- testimonial section start here  ----------------------------->
     <section id="testimonialSection" class="text-white px-4 md:px-16">
       <div class="contact-hero text-center py-0 mt-5 ">
-        <h2 class="text-2xl md:text-3xl tracking-wider font-semibold">
+        <h2 class="text-2xl md:text-3xl tracking-wider font-semibold ">
           Testimonials
         </h2>
         <p class="md:px-[10%] px-0 md:my-1 text-gray-300">
@@ -599,15 +602,13 @@
       </div>
 
       <!-- testimonial container start here  -->
-      <div class="testimonial-con py-5   grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+      <div style="scrollbar-width: none;" class="testimonial-con py-5 flex gap-5 overflow-x-scroll snap-mandatory snap-x">
         <!-- card 1  -->
         <div
-          class="card border border-transparent hover:border hover:border-green-400 transition duration-500 p-5 bg-[#151515] rounded-md">
-          <p class="text-gray-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit laudantium obcaecati
-            impedit, a beatae
-            corrupti!</p>
+          class="card border border-transparent hover:border hover:border-green-400 transition duration-500 p-5 bg-[#151515] rounded-md flex-grow-0 flex-shrink-0 basis-full sm:basis-[45%] md:basis-2/5 snap-start">
+          <p class="text-gray-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eveniet quam laborum voluptates impedit quidem perferendis necessitatibus beatae labore, nobis enim maiores. Ducimus, eius quisquam?</p>
           <div class="flex items-center gap-5 mt-5">
-            <img class="w-14 h-14 object-cover rounded-full" src="./src/assets/images/person/person-f-12.webp"
+            <img loading="lazy" class="w-14 h-14 object-cover rounded-full" src="./src/assets/images/person/person-f-12.webp"
               alt="user">
             <div>
               <h3 class="text-xl font-semibold -mb-1">Holden Caulfield</h3>
@@ -618,12 +619,10 @@
 
         <!-- card 2  -->
         <div
-          class="card border border-transparent hover:border hover:border-green-400 transition duration-500 p-5 bg-[#151515] rounded-md">
-          <p class="text-gray-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit laudantium obcaecati
-            impedit, a beatae
-            corrupti!</p>
+          class="card border border-transparent hover:border hover:border-green-400 transition duration-500 p-5 bg-[#151515] rounded-md flex-grow-0 flex-shrink-0 basis-full sm:basis-[45%] md:basis-2/5 snap-start">
+          <p class="text-gray-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas facere corrupti obcaecati deleniti earum excepturi architecto eligendi incidunt, sunt libero iusto doloribus, rem delectus. Explicabo?</p>
           <div class="flex items-center gap-5 mt-5">
-            <img class="w-14 h-14 object-cover rounded-full" src="./src/assets/images/person/person-m-12.webp"
+            <img loading="lazy" class="w-14 h-14 object-cover rounded-full" src="./src/assets/images/person/person-m-12.webp"
               alt="user">
             <div>
               <h3 class="text-xl font-semibold -mb-1">Holden Caulfield</h3>
@@ -634,12 +633,23 @@
 
         <!-- card 3 -->
         <div
-          class="card border border-transparent hover:border hover:border-green-400 transition duration-500 p-5 bg-[#151515] rounded-md">
-          <p class="text-gray-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit laudantium obcaecati
-            impedit, a beatae
-            corrupti!</p>
+          class="card border border-transparent hover:border hover:border-green-400 transition duration-500 p-5 bg-[#151515] rounded-md flex-grow-0 flex-shrink-0 basis-full sm:basis-[45%] md:basis-2/5 snap-start">
+          <p class="text-gray-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam autem, itaque repellat id, enim fuga magni, ratione sequi quaerat ullam delectus commodi aut voluptas error.</p>
           <div class="flex items-center gap-5 mt-5">
-            <img class="w-14 h-14 object-cover rounded-full" src="./src/assets/images/person/person-m-9.webp"
+            <img loading="lazy" class="w-14 h-14 object-cover rounded-full" src="./src/assets/images/person/person-m-9.webp"
+              alt="user">
+            <div>
+              <h3 class="text-xl font-semibold -mb-1">Holden Caulfield</h3>
+              <h6 class="text-gray-300">Engineer</h6>
+            </div>
+          </div>
+        </div>
+        <!-- card 4  -->
+        <div
+          class="card border border-transparent hover:border hover:border-green-400 transition duration-500 p-5 bg-[#151515] rounded-md flex-grow-0 flex-shrink-0 basis-full sm:basis-[45%] md:basis-2/5 snap-start">
+          <p class="text-gray-200">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis mollitia, aut pariatur suscipit corrupti tempore neque placeat non, expedita deserunt delectus voluptas. Quae, aliquid quasi.</p>
+          <div class="flex items-center gap-5 mt-5">
+            <img loading="lazy" class="w-14 h-14 object-cover rounded-full" src="./src/assets/images/person/person-m-13.webp"
               alt="user">
             <div>
               <h3 class="text-xl font-semibold -mb-1">Holden Caulfield</h3>
