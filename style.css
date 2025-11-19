@@ -810,50 +810,6 @@ video {
   flex-basis: 100%;
 }
 
-.basis-2\/4 {
-  flex-basis: 50%;
-}
-
-.basis-2\/5 {
-  flex-basis: 40%;
-}
-
-.basis-1\/5 {
-  flex-basis: 20%;
-}
-
-.basis-4\/5 {
-  flex-basis: 80%;
-}
-
-.basis-2\/6 {
-  flex-basis: 33.333333%;
-}
-
-.basis-1\/3 {
-  flex-basis: 33.333333%;
-}
-
-.basis-1\/4 {
-  flex-basis: 25%;
-}
-
-.basis-3\/4 {
-  flex-basis: 75%;
-}
-
-.basis-2 {
-  flex-basis: 0.5rem;
-}
-
-.basis-\[80\%\] {
-  flex-basis: 80%;
-}
-
-.basis-\[95\%\] {
-  flex-basis: 95%;
-}
-
 .translate-x-\[-50\%\] {
   --tw-translate-x: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -871,32 +827,16 @@ video {
   resize: none;
 }
 
-.snap-none {
-  scroll-snap-type: none;
-}
-
 .snap-x {
   scroll-snap-type: x var(--tw-scroll-snap-strictness);
-}
-
-.snap-both {
-  scroll-snap-type: both var(--tw-scroll-snap-strictness);
 }
 
 .snap-mandatory {
   --tw-scroll-snap-strictness: mandatory;
 }
 
-.snap-proximity {
-  --tw-scroll-snap-strictness: proximity;
-}
-
 .snap-start {
   scroll-snap-align: start;
-}
-
-.scroll-m-0 {
-  scroll-margin: 0px;
 }
 
 .list-inside {
@@ -984,10 +924,6 @@ video {
 
 .overscroll-y-auto {
   overscroll-behavior-y: auto;
-}
-
-.overscroll-x-auto {
-  overscroll-behavior-x: auto;
 }
 
 .scroll-smooth {
@@ -1464,6 +1400,26 @@ html{
   width: 100%;
 }
 
+.after\:w-\[96\%\]::after {
+  content: var(--tw-content);
+  width: 96%;
+}
+
+.after\:w-\[80\%\]::after {
+  content: var(--tw-content);
+  width: 80%;
+}
+
+.after\:w-\[85\%\]::after {
+  content: var(--tw-content);
+  width: 85%;
+}
+
+.after\:w-\[70\%\]::after {
+  content: var(--tw-content);
+  width: 70%;
+}
+
 .after\:rounded-\[0\%_0\%_50\%_50\%\]::after {
   content: var(--tw-content);
   border-radius: 0% 0% 50% 50%;
@@ -1646,18 +1602,6 @@ html{
     flex-grow: 0;
   }
 
-  .sm\:basis-0 {
-    flex-basis: 0px;
-  }
-
-  .sm\:basis-\[\] {
-    flex-basis: ;
-  }
-
-  .sm\:basis-\[45\] {
-    flex-basis: 45;
-  }
-
   .sm\:basis-\[45\%\] {
     flex-basis: 45%;
   }
@@ -1754,20 +1698,16 @@ html{
     flex-basis: 25%;
   }
 
-  .md\:basis-4\/12 {
-    flex-basis: 33.333333%;
-  }
-
   .md\:basis-2\/5 {
     flex-basis: 40%;
   }
 
-  .md\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .md\:basis-4\/12 {
+    flex-basis: 33.333333%;
   }
 
-  .md\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .md\:grid-cols-4 {
